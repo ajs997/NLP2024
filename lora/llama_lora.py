@@ -11,7 +11,7 @@ from typing import List
 from transformers import LlamaForCausalLM, LlamaTokenizer, BitsAndBytesConfig
 
 # The LLM_Lora base class
-from .llm_lora import LLM_Lora
+from .llm_lora_mmml import LLM_Lora
 
 class Llama_Lora(LLM_Lora):
     def __init__(self,

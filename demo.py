@@ -2,13 +2,13 @@ import fire
 from lora import Llama_Lora, Gemma_Lora
 from huggingface_hub import login
 
-ACCESS_TOKEN= ""   #add access token
+ACCESS_TOKEN= "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"
 login(token=ACCESS_TOKEN)
 
 def main(
         task: str = "eval",
-        llm: str = "gemma",
-        base_model: str = "google/gemma-7b-it",
+        llm: str = "llama",
+        base_model: str = "meta-llama/Llama-2-7b-hf",
 ):
     # base_model_name: str = "meta-llama/Llama-2-7b-hf"
     if len(base_model) == 0:
@@ -25,7 +25,10 @@ def main(
         raise ValueError(f"Unrecognized llm name: {llm}")
     if task == "train":
         m.train(
-            train_file = "data/arxiv/part1_2014-2018",
+            # train_file = "data/sst2/train.json",
+            # val_file = "data/sst2/val.json",
+            train_file = "data/MMML/train.json",
+            val_file = "data/mmml/val.json",
             output_dir = f"./ckp_sst_{llm}_lora",
             train_batch_size = 32,
             num_epochs = 1,
@@ -36,7 +39,8 @@ def main(
         )
     elif task == "eval":
         m.predict(
-            input_file = "data/sst2/val.json",
+            # input_file = "data/sst2/val.json",
+            input_file = "data/MMML/out/dev.json",
             # lora_adapter = "./ckp_sst2_llama2_lora",
             max_new_tokens = 32,
             verbose = True,
