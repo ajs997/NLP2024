@@ -1,4 +1,6 @@
 To generate the preprocessed data:
+- Change the instruction field line 16 - getMMMLData.py
+- Run the file
 ```bash
 python getMMMLData.py
 ```
