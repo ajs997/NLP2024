@@ -1,4 +1,4 @@
-To generate the preprocessed data:
+To generate the preprocessed data (/data/MMML/out/dev.json):
 - Change the instruction field line 16 - getMMMLData.py
 - Run the file
 ```bash
