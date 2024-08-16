@@ -1,8 +1,14 @@
 To generate the preprocessed data:
+```bash
 python getMMMLData.py
+```
+
 
 To submit slurm job:
+```bash
 sbatch test.slurm 
+```
+
 
 
 *********************************************************************************************************
