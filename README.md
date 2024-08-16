@@ -1,3 +1,11 @@
+To generate the preprocessed data:
+python getMMMLData.py
+
+To submit slurm job:
+sbatch test.slurm 
+
+
+*********************************************************************************************************
 
 This package is to provide a codebase to easily fine-tune some open-source LLMs and reproduce the results. 
 
