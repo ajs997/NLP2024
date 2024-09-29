@@ -1,3 +1,19 @@
+To generate the preprocessed data (data/MMML/out/dev.json):
+- Change the instruction field line 16 - getMMMLData.py
+- Run the file
+```bash
+python getMMMLData.py
+```
+
+
+To submit slurm job:
+```bash
+sbatch test.slurm 
+```
+
+
+
+*********************************************************************************************************
 
 This package is to provide a codebase to easily fine-tune some open-source LLMs and reproduce the results. 
 
