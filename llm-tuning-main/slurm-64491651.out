@@ -1,0 +1,25 @@
+Token has not been saved to git credential helper. Pass `add_to_git_credential=True` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /scratch/zwz3wu/huggingface/hub/token
+Login successful
+learning rate: 0.0003
+
+Load the pre-trained model: meta-llama/Llama-2-7b-hf
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.02s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.47s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.70s/it]
+/sfs/weka/scratch/zwz3wu/NLP2024/llm-tuning-main
+trainable params: 4,194,304 || all params: 6,742,609,920 || trainable%: 0.06220594176090199
+Load training data from data/MMML/out_preprocess/dev.json
+Load val data from data/MMML/out_preprocess/val.json
+Map:   0%|          | 0/285 [00:00<?, ? examples/s]Map:  28%|██▊       | 79/285 [00:00<00:00, 751.35 examples/s]Map:  58%|█████▊    | 164/285 [00:00<00:00, 800.61 examples/s]Map:  87%|████████▋ | 248/285 [00:00<00:00, 813.93 examples/s]Map: 100%|██████████| 285/285 [00:00<00:00, 758.48 examples/s]
+Map:   0%|          | 0/1531 [00:00<?, ? examples/s]Map:   5%|▌         | 78/1531 [00:00<00:01, 757.35 examples/s]Map:  11%|█         | 165/1531 [00:00<00:01, 819.01 examples/s]Map:  16%|█▌        | 248/1531 [00:00<00:01, 818.26 examples/s]Map:  22%|██▏       | 332/1531 [00:00<00:01, 825.71 examples/s]Map:  28%|██▊       | 422/1531 [00:00<00:01, 842.46 examples/s]Map:  36%|███▌      | 545/1531 [00:00<00:01, 830.08 examples/s]Map:  43%|████▎     | 663/1531 [00:00<00:01, 809.77 examples/s]Map:  51%|█████     | 774/1531 [00:00<00:00, 778.70 examples/s]Map:  58%|█████▊    | 891/1531 [00:01<00:00, 776.19 examples/s]Map:  65%|██████▌   | 1000/1531 [00:01<00:00, 676.57 examples/s]Map:  70%|███████   | 1072/1531 [00:01<00:00, 682.31 examples/s]Map:  75%|███████▍  | 1147/1531 [00:01<00:00, 697.05 examples/s]Map:  80%|████████  | 1225/1531 [00:01<00:00, 714.99 examples/s]Map:  85%|████████▌ | 1305/1531 [00:01<00:00, 732.76 examples/s]Map:  90%|█████████ | 1380/1531 [00:01<00:00, 731.57 examples/s]Map:  97%|█████████▋| 1492/1531 [00:01<00:00, 731.84 examples/s]Map: 100%|██████████| 1531/1531 [00:02<00:00, 736.48 examples/s]
+/home/zwz3wu/.conda/envs/test/lib/python3.9/site-packages/accelerate/accelerator.py:432: FutureWarning: Passing the following arguments to `Accelerator` is deprecated and will be removed in version 1.0 of Accelerate: dict_keys(['dispatch_batches', 'split_batches', 'even_batches', 'use_seedable_sampler']). Please pass an `accelerate.DataLoaderConfiguration` instead: 
+dataloader_config = DataLoaderConfiguration(dispatch_batches=None, split_batches=False, even_batches=True, use_seedable_sampler=True)
+  warnings.warn(
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+  0%|          | 0/9 [00:00<?, ?it/s]/home/zwz3wu/.conda/envs/test/lib/python3.9/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/zwz3wu/.conda/envs/test/lib/python3.9/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+ 11%|█         | 1/9 [00:16<02:14, 16.83s/it] 22%|██▏       | 2/9 [00:32<01:52, 16.13s/it] 33%|███▎      | 3/9 [00:48<01:35, 15.91s/it] 44%|████▍     | 4/9 [01:02<01:16, 15.36s/it] 56%|█████▌    | 5/9 [01:17<01:00, 15.11s/it]                                              56%|█████▌    | 5/9 [01:17<01:00, 15.11s/it] 67%|██████▋   | 6/9 [01:33<00:46, 15.38s/it] 78%|███████▊  | 7/9 [01:48<00:31, 15.51s/it] 89%|████████▉ | 8/9 [02:02<00:14, 14.72s/it]100%|██████████| 9/9 [02:17<00:00, 14.96s/it]                                             100%|██████████| 9/9 [02:17<00:00, 14.96s/it]100%|██████████| 9/9 [02:17<00:00, 15.28s/it]
+{'loss': 2.2564, 'grad_norm': 0.9510282874107361, 'learning_rate': 0.0001333333333333333, 'epoch': 0.56}
+{'train_runtime': 137.5032, 'train_samples_per_second': 2.073, 'train_steps_per_second': 0.065, 'train_loss': 2.1019897990756564, 'epoch': 1.0}

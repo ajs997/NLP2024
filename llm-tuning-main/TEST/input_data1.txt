@@ -1,0 +1,5 @@
+r1|p08|Definitely affordable and high-quality. It's reliable and comes with durable features.
+r2|p06|This is a poor and unreliable product. It's defective and definitely disappointing.
+r3|p05|This product is disappointing and poorly designed. It's complicated and difficult to use regularly.
+r4|p01|This item has excellent build quality, but the complicated setup process was disappointing.
+r5|p01|It's an affordable and reliable device, though the design feels a bit outdated.

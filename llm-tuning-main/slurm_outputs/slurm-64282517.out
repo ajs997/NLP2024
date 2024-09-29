@@ -1,0 +1,24 @@
+Token has not been saved to git credential helper. Pass `add_to_git_credential=True` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /scratch/zwz3wu/huggingface/hub/token
+Login successful
+learning rate: 0.0003
+
+Load the pre-trained model: meta-llama/Llama-2-7b-hf
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.81s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.36s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.58s/it]
+/sfs/weka/scratch/zwz3wu/NLP2024/llm-tuning-main
+trainable params: 4,194,304 || all params: 6,742,609,920 || trainable%: 0.06220594176090199
+Load training data from data/MMML/out_preprocess/dev.json
+Load val data from data/MMML/out_preprocess/val.json
+Map:   0%|          | 0/285 [00:00<?, ? examples/s]Map:  39%|███▊      | 110/285 [00:00<00:00, 1081.70 examples/s]Map:  77%|███████▋  | 219/285 [00:00<00:00, 1074.72 examples/s]Map: 100%|██████████| 285/285 [00:00<00:00, 801.55 examples/s] 
+Map:   0%|          | 0/1531 [00:00<?, ? examples/s]Map:   5%|▌         | 83/1531 [00:00<00:01, 808.18 examples/s]Map:  12%|█▏        | 181/1531 [00:00<00:01, 904.55 examples/s]Map:  18%|█▊        | 282/1531 [00:00<00:01, 947.85 examples/s]Map:  25%|██▌       | 383/1531 [00:00<00:01, 967.81 examples/s]Map:  32%|███▏      | 483/1531 [00:00<00:01, 972.19 examples/s]Map:  39%|███▉      | 601/1531 [00:00<00:00, 1041.09 examples/s]Map:  49%|████▉     | 755/1531 [00:00<00:00, 1031.77 examples/s]Map:  59%|█████▉    | 904/1531 [00:00<00:00, 1012.39 examples/s]Map:  69%|██████▉   | 1056/1531 [00:01<00:00, 914.01 examples/s]Map:  76%|███████▌  | 1161/1531 [00:01<00:00, 943.01 examples/s]Map:  85%|████████▌ | 1302/1531 [00:01<00:00, 935.13 examples/s]Map:  92%|█████████▏| 1414/1531 [00:01<00:00, 977.02 examples/s]Map: 100%|█████████▉| 1527/1531 [00:01<00:00, 1012.10 examples/s]Map: 100%|██████████| 1531/1531 [00:01<00:00, 930.76 examples/s] 
+/home/zwz3wu/.conda/envs/test/lib/python3.9/site-packages/accelerate/accelerator.py:432: FutureWarning: Passing the following arguments to `Accelerator` is deprecated and will be removed in version 1.0 of Accelerate: dict_keys(['dispatch_batches', 'split_batches', 'even_batches', 'use_seedable_sampler']). Please pass an `accelerate.DataLoaderConfiguration` instead: 
+dataloader_config = DataLoaderConfiguration(dispatch_batches=None, split_batches=False, even_batches=True, use_seedable_sampler=True)
+  warnings.warn(
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+  0%|          | 0/1 [00:00<?, ?it/s]/home/zwz3wu/.conda/envs/test/lib/python3.9/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/zwz3wu/.conda/envs/test/lib/python3.9/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+100%|██████████| 1/1 [02:01<00:00, 121.11s/it]                                              100%|██████████| 1/1 [02:01<00:00, 121.11s/it]100%|██████████| 1/1 [02:01<00:00, 121.11s/it]
+{'train_runtime': 121.1114, 'train_samples_per_second': 2.353, 'train_steps_per_second': 0.008, 'train_loss': 2.4447450637817383, 'epoch': 0.89}
